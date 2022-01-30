@@ -3,9 +3,29 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Lit Starter Kit</title>
+    <title>Umbraco Dropdown Demo</title>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="./src/umbraco-dropdown.js"></script>
+    <style>
+      body {
+        background-color: #010014;
+      }
+      h1, h3, h4 {
+        color: #005678;
+      }
+      p, li {
+        color: #FF296D
+      }
+      a {
+        color: #FAF002;
+      }
+    </style>
   </head>
   <body>
-    <a href="/dev/index.html">Component Demo</a>
+    <h1>This is a custom dropdown element</h1>
+    <h3>It's designed with a cyberpunk-like feel</h3>
+    <h4>Big shoutout to the designer: <a href="https://developpaper.com/css-steps-to-achieve-the-visual-effect-of-cyberpunk-2077-style/">source</a></h4>
+    <umbraco-dropdown buttonText="My Dropdown"></umbraco-dropdown>
   </body>
 </html>
